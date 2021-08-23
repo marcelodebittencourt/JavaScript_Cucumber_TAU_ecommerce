@@ -4,7 +4,10 @@
   "description": "Simple Google Search",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/wdio ./wdio.conf.js",
+    "test:regression": "./node_modules/.bin/wdio wdio.conf.js --cucumberOpts.tagExpression='@regression'",
+    "test:dev":"./node_modules/.bin/wdio wdio.conf.js --cucumberOpts.tagExpression='@dev'",
+    "test:int":"./node_modules/.bin/wdio wdio.conf.js --cucumberOpts.tagExpression='@int'"
   },
   "keywords": [],
   "author": "Gavin Samuels with code customizations by Marcelo de Bittencourt",

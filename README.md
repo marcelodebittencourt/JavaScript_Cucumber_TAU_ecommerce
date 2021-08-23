@@ -17,6 +17,12 @@ So now in 2021 August the test is running ok.
 
   .\node_modules\.bin\wdio .\wdio.conf.js --spec .\features\Authentication\Login.feature
 
+  Running using npm scripts:
+
+  npm run test:dev
+  
+  npm test
+
  ## Additional resources
  * Regular expression site: https://regexr.com/
 
