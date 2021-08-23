@@ -13,6 +13,10 @@ So now in 2021 August the test is running ok.
 
   $ .\node_modules\.bin\wdio .\wdio.conf.js
 
+  For specific feature files:
+
+  .\node_modules\.bin\wdio .\wdio.conf.js --spec .\features\Authentication\Login.feature
+
  ## Additional resources
  * Regular expression site: https://regexr.com/
 
@@ -21,6 +25,7 @@ So now in 2021 August the test is running ok.
 * npm i webdriverio @wdio/cli
 * npm install --save-dev @cucumber/cucumber
 * npm audit fix
+* npm i dotenv
 
 ## If you face error running PowerShell scripts
 * set-ExecutionPolicy RemoteSigned -Scope CurrentUser 
